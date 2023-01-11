@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  fmd:
+    container_name: fmdserver
+    build:
+      context: .
+    restart: always
+    ports:
+      - 8094:1020
+    volumes:
+      - ./fmd-data:/app/data
