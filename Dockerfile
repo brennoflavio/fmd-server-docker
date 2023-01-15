@@ -4,6 +4,7 @@ RUN apt-get update -y
 RUN apt-get install wget xz-utils -y
 
 RUN mkdir /app
+VOLUME /app
 WORKDIR /app
 
 RUN wget https://github.com/objectbox/objectbox-c/releases/download/v0.15.1/objectbox-linux-x64.tar.gz

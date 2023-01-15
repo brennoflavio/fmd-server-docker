@@ -7,5 +7,3 @@ services:
     restart: always
     ports:
       - 8094:1020
-    volumes:
-      - ./fmd-data:/app/data
